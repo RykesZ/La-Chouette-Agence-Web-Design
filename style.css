@@ -506,18 +506,12 @@ button {
 }
 
 .scrollToTop {
-    width: 40px;
-    height: 40px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
     z-index: 500;
     transition: all .3s ease-in-out;
-}
-
-.scrollToTop span {
-    margin-top: 6px;
 }
 
 .showScrollTop {
@@ -574,7 +568,7 @@ a[data-lightbox]:hover img {
 .lightbox-caption {
     padding: 20px;
     color: #FFF;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 1);
     position: absolute;
     left: 15px;
     right: 15px;
@@ -871,13 +865,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -896,8 +890,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -907,8 +901,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -1076,4 +1070,8 @@ figcaption {
 
 .adresse {
     text-align: center;
+}
+
+.partenaires {
+    padding-left: 50px;
 }
