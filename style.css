@@ -538,9 +538,8 @@ a[data-lightbox]:hover::before {
     font-weight: 100;
     z-index: 1;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    top: 40%;
+    left: 46%;
 }
 
 a[data-lightbox]:hover img {
@@ -868,6 +867,22 @@ h4 {
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
+    }
+    a[data-lightbox]:hover::before {
+        content: "+";
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+        font-size: 2.5em;
+        width: 50px;
+        height: 50px;
+        margin-left: -25px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .6);
+        color: #FFF;
+        font-weight: 100;
+        z-index: 1;
+        position: absolute;
+        top: 40%;
+        left: 42%;
     }
 }
 
